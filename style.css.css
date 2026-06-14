@@ -2,17 +2,34 @@
     --primary: #048BA8;
     --secondary: #A4036F;
     --accent: #16DB93;
+    --text-light: #ffffff;
+    --text-dark: #17324a;
 }
 
-/* Forzar color de fondo en Navbar */
+body {
+    color: var(--text-dark);
+    background: linear-gradient(180deg, #f6fffe 0%, #ffffff 100%);
+}
+
 .navbar {
     background-color: var(--primary) !important;
+    box-shadow: 0 4px 12px rgba(4, 139, 168, 0.25);
 }
 
-/* Forzar color de texto en el menú */
-.navbar .nav-link, .navbar-brand {
-    color: #ffffff !important;
+.navbar .nav-link,
+.navbar-brand,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--text-light) !important;
     font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.45);
 }
 
 /* Estilo para el botón de Agendar Cita */
