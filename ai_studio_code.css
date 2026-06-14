@@ -1,0 +1,45 @@
+:root {
+    --primary: #048BA8;
+    --secondary: #A4036F;
+    --accent: #16DB93;
+}
+
+/* Forzar color de fondo en Navbar */
+.navbar {
+    background-color: var(--primary) !important;
+}
+
+/* Forzar color de texto en el menú */
+.navbar .nav-link, .navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+/* Estilo para el botón de Agendar Cita */
+.btn-primary {
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary) !important;
+}
+
+/* Asegurar que el título sea visible sobre la imagen */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Animación Corazón */
+.heart-beat { animation: beat 1.5s infinite; }
+@keyframes beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+/* Bordes Arcoiris */
+.rainbow-border { 
+    border: 4px solid transparent; 
+    background-image: linear-gradient(white, white), linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+    background-origin: border-box; 
+    background-clip: padding-box, border-box; 
+}

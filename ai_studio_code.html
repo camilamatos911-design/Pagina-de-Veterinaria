@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria Salud Animal | RD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ai_studio_code.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">🐾 VetCare RD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="text-center py-5" style="background: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee') center/cover no-repeat; height: 80vh; display: flex; align-items: center; color: white;">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Cuidamos a tus mejores amigos 🐶🐱</h1>
+            <p class="lead">Excelencia médica veterinaria en República Dominicana.</p>
+            <a href="#contacto" class="btn btn-primary btn-lg mt-3">Agendar Cita</a>
+        </div>
+    </header>
+
+    <section id="servicios" class="container py-5">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+        <div class="row g-4">
+            <div class="col-md-4"><div class="card h-100 shadow"><img src="https://purina.com.do/sites/default/files/2022-10/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg" class="card-img-top"><div class="card-body text-center"><i class="fas fa-stethoscope fa-3x mb-3"></i><h5>Consulta General</h5><p>Atención integral para tu mascota.</p></div></div></div>
+            <div class="col-md-4"><div class="card h-100 shadow"><img src="https://holavet.com.ar/wp-content/uploads/2022/04/close-up-on-veterinarian-taking-care-of-pet-1.webp" class="card-img-top"><div class="card-body text-center"><i class="fas fa-手术刀 fa-3x mb-3"></i><h5>Cirugías</h5><p>Procedimientos seguros y profesionales.</p></div></div></div>
+            <div class="col-md-4"><div class="card h-100 shadow"><img src="https://neozoo.com.ar/wp-content/uploads/2023/06/Iconos-e-imagenes-09.png" class="card-img-top"><div class="card-body text-center"><i class="fas fa-cut fa-3x mb-3"></i><h5>Peluquería</h5><p>Estética y cuidado de higiene.</p></div></div></div>
+        </div>
+    </section>
+
+    <section id="equipo" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Nuestro Equipo</h2>
+            <div class="row mt-4">
+                <div class="col-md-4"><img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle mb-3 border border-4" width="150"><h4>Dra. Ana López</h4><p>Especialista en Medicina Interna</p></div>
+                <div class="col-md-4"><img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle mb-3 border border-4" width="150"><h4>Dr. Carlos Méndez</h4><p>Cirujano Veterinario</p></div>
+                <div class="col-md-4"><img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-3 border border-4" width="150"><h4>Dra. Laura Gómez</h4><p>Dermatóloga Veterinaria</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Carrusel 10 Clientes -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+        <div id="clientesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carouselContent"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#clientesCarousel" data-bs-slide="prev" style="left: -50px;"><span class="carousel-control-prev-icon bg-dark"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#clientesCarousel" data-bs-slide="next" style="right: -50px;"><span class="carousel-control-next-icon bg-dark"></span></button>
+        </div>
+    </section>
+
+    <section id="contacto" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm contact-card">
+                    <h3>¿Emergencia?</h3>
+                    <p class="display-6">809-555-0123</p>
+                    <a href="https://wa.me/18095550123" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <input type="text" class="form-control mb-3" id="nombre" placeholder="Nombre" required>
+                    <input type="email" class="form-control mb-3" id="email" placeholder="Email" required>
+                    <textarea class="form-control mb-3" id="mensaje" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="mb-3">
+            <i class="fab fa-facebook fa-2x mx-2"></i><i class="fab fa-instagram fa-2x mx-2"></i><i class="fab fa-twitter fa-2x mx-2"></i><i class="fab fa-linkedin fa-2x mx-2"></i><i class="fab fa-youtube fa-2x mx-2"></i>
+        </div>
+        <p>Av. Principal #123, Santo Domingo | Lun-Vie: 8am - 6pm</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">¡Enviado! 🐾</h5></div><div class="modal-body">Mensaje recibido correctamente.</div></div></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ai_studio_code.js"></script>
+</body>
+</html>
